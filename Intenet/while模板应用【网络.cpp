@@ -2,8 +2,10 @@
 
 // 通例为空，若不匹配特例将报错，很好的调试手段（这里是 bool 就无所谓了）
 template<bool c, typename Then, typename Else> class IF_ { };
+
 template<typename Then, typename Else>
 class IF_<true, Then, Else> { public: typedef Then reType; };
+
 template<typename Then, typename Else>
 class IF_<false,Then, Else> { public: typedef Else reType; };
 

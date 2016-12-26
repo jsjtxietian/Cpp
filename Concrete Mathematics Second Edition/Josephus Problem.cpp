@@ -1,5 +1,6 @@
 //P67
 //Josephus Problem
+//£¡£¡£¡ ceil() and floor() 
 #include<iostream>
 #include<cmath>
 using namespace std;
